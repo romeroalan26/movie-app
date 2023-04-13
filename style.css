@@ -34,9 +34,6 @@ h1 {
 	cursor: pointer;
 }
 
-.movie:active {
-	background-color: #c2c1c0;
-}
 .movie:hover {
 	opacity: 0.8;
 }

@@ -34,9 +34,6 @@ h1 {
 	cursor: pointer;
 }
 
-.movie:hover {
-	opacity: 0.8;
-}
 #form input {
 	border-radius: 10px;
 	border: none;

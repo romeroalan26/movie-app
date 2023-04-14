@@ -31,7 +31,6 @@ h1 {
 	flex-wrap: wrap;
 	row-gap: 15px;
 	column-gap: 2%;
-	cursor: pointer;
 }
 
 #form input {

@@ -28,6 +28,7 @@ h1 {
 	width: 100%;
 	margin-top: 80px;
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	row-gap: 15px;
 	column-gap: 2%;
@@ -49,21 +50,21 @@ h1 {
 	border: none;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.movie-image img {
+.movieImage img {
 	width: 220px;
 	height: 350px;
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-.movie-image,
-.movie-title {
+.movieImage,
+.movieTitle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.movie-title .title {
+.movieTitle .title {
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
@@ -90,14 +91,14 @@ h1 {
 		font-size: 16px;
 	}
 
-	.movie-image img {
-		width: 190px;
-		height: 350px;
+	.movieImage img {
+		width: 98%;
+		height: 300px;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
 
-	.movie-title .title {
+	.movieTitle .title {
 		width: 150px;
 		font-size: 16px;
 		font-weight: bold;

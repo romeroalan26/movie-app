@@ -17,8 +17,9 @@
 	background-color: #e57a44;
 	height: 50px;
 }
-h1 {
+h1 a {
 	color: white;
+	text-decoration: none;
 }
 
 #main {

@@ -16,7 +16,7 @@ returnMovie(apiUrl);
 function returnMovie(url) {
 	fetch(url)
 		.then((res) => res.json())
-		.then(function (data) {
+		.then((data) => {
 			console.log(data.results);
 			data.results.forEach((element) => {
 				const div_movie = document.createElement("div");
@@ -27,19 +27,33 @@ function returnMovie(url) {
 
 				const image = document.createElement("img");
 
+				// const overviewText = document.createElement("p");
+				// overviewText.classList.add("overview-text");
+
+				const overview = document.createElement("div");
+				overview.classList.add("overview");
+
 				const div_movieTitle = document.createElement("div");
 				div_movieTitle.classList.add("movieTitle");
 
 				const paragraph = document.createElement("p");
 				paragraph.classList.add("Title");
 
+				const modal = document.createElement("div");
+				modal.classList.add("modal");
+
 				paragraph.innerHTML = `${element.title}`;
 				image.src = imgPath + element.poster_path;
+				// overviewText.innerT = "Overview";
+				overview.innerHTML = `<b>Overview:</b><br> ${element.overview} <br> <br>
+				<b>Release date:</b> ${element.release_date}`;
 				div_movieImage.appendChild(image);
 				div_movie.appendChild(div_movieImage);
 				div_movieTitle.appendChild(paragraph);
 				div_movie.appendChild(div_movieTitle);
 				mainSection.appendChild(div_movie);
+				div_movie.appendChild(overview);
+				// overview.appendChild(overviewText);
 			});
 		});
 }

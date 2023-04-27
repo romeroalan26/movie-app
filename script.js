@@ -44,7 +44,6 @@ function returnMovie(url) {
 
 				paragraph.innerHTML = `${element.title}`;
 				image.src = imgPath + element.poster_path;
-				// overviewText.innerT = "Overview";
 				overview.innerHTML = `<b>Overview:</b><br> ${element.overview} <br> <br>
 				<b>Release date:</b> ${element.release_date}`;
 				div_movieImage.appendChild(image);
@@ -53,7 +52,6 @@ function returnMovie(url) {
 				div_movie.appendChild(div_movieTitle);
 				mainSection.appendChild(div_movie);
 				div_movie.appendChild(overview);
-				// overview.appendChild(overviewText);
 			});
 		});
 }
